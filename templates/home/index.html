@@ -5,35 +5,67 @@
 <title>Model Test 1 Routine</title>
 <style type="text/css">
 	body{
+		margin: 0px;
 		font-family: sans-serif;
+		font-size: 1em;
 	}
-	table{
+	.tab{
 		border-collapse: collapse;
 		width: 100%;
 	}
-	tr, thead{
+	.tab tr, .tab thead{
 		padding: 10px;
 		text-align: center;
 	}
-	td, th{padding: 10px;font-size: 1.4em;}
-	th{
+	.tab td, .tab th{padding: 10px;}
+	.tab th{
 		background-color: #4286f4;
 		color: white;
 	}
 	#color_tr{
 		background-color: #edf3ff;
 	}
-	tr:hover{
+	.tab tr:hover{
 		background-color: #d3e2ff;
 	}
 	#color_tr:hover{
 		background-color: #d3e2ff;
 	}
+	.host a{
+		text-decoration: none;
+		color: #c282ed;
+	}
+	.py{
+		color: #e4e829;
+		text-decoration: none;
+	}
+	.django{
+		color: #00ad62;
+		text-decoration: none;
+	}
+	.footertab{
+		margin-top: 10px;
+		background-color: #4f2c66;
+		color: white;
+		width: 100%;
+		text-align: center;
+	}
+	.footertab td{
+		width: 33.3333333%;
+		padding: 20px;
+	}
+	@media screen and (max-width: 480px) {
+	  	body{
+			margin: 0px;
+			font-family: sans-serif;
+			font-size: 1.4em;
+		}
+	}
 </style>
 </head>
 
 <body>
-	<table>
+	<table class="tab">
 		<tbody>
 			<thead>
 				<th>Date</th>
@@ -97,6 +129,20 @@
 			</tr>
 		</tbody>
 	</table>
+	<div class="footer">
+		<table class="footertab">
+			<tr>
+				<td>
+					<p class="host">This WebSite is hosted by <a href="https://heroku.com">Heroku</a></p>
+				</td>
+				<td>
+					<p class="dev">Developed by Fahim Al Islam.</p>
+					<p>&copy copyright.</p>
+				</td>
+				<td>Developed by <a href="https://python.org" class="py">Python</a> <a href="https://djangoproject.com" class='django'>Django Framework</a></td>
+			</tr>
+		</table>
+	</div>
 </body>
 
 </html>

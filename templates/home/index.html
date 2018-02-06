@@ -1,146 +1,68 @@
 <!DOCTYPE html>
-<html>
+{% load staticfiles %}
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>First Model Test</title>
-<style type="text/css">
-	body{
-		margin: 0px;
-		font-family: sans-serif;
-		font-size: 1em;
-	}
-	.tab{
-		border-collapse: collapse;
-		width: 100%;
-	}
-	.tab tr, .tab thead{
-		padding: 10px;
-		text-align: center;
-	}
-	.tab td, .tab th{padding: 10px;}
-	.tab th{
-		background-color: #4286f4;
-		color: white;
-	}
-	#color_tr{
-		background-color: #c4daff;
-	}
-	.tab tr:hover{
-		background-color: #e2edff;
-	}
-	#color_tr:hover{
-		background-color: #d3e2ff;
-	}
-	.host a{
-		text-decoration: none;
-		color: #c282ed;
-	}
-	.py{
-		color: #e4e829;
-		text-decoration: none;
-	}
-	.django{
-		color: #00ad62;
-		text-decoration: none;
-	}
-	.footertab{
-		margin-top: 10px;
-		background-color: #4f2c66;
-		color: white;
-		width: 100%;
-		text-align: center;
-	}
-	.footertab td{
-		width: 33.3333333%;
-		padding: 20px;
-	}
-	@media screen and (max-width: 720px) {
-	  	body{
-			font-size: 1.4em;
-		}
-	}
-</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=auto, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Acme</title>
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
-
 <body>
-	<table class="tab">
-		<tbody>
-			<thead>
-				<th>Date</th>
-				<th>Day</th>
-				<th>Time</th>
-				<th>Subject</th>
-			<thead>
-			<tr>
-				<td>04.02.2018</td>
-				<td>Sunday</td>
-				<td>2:00 - 5:00</td>
-				<td>Information & Communiation Technology</td>
-			</tr>
-			<tr id="color_tr">
-				<td>05.02.2018</td>
-				<td>Monday</td>
-				<td>2:00 - 5:00</td>
-				<td>English 1<sup>st</sup> Paper</td>
-			</tr>
-			<tr>
-				<td>07.02.2018</td>
-				<td>Wednesday</td>
-				<td>2:00 - 5:00</td>
-				<td>Islamic History & Culture 1<sup>st</sup> Paper</td>
-			</tr>
-			<tr id="color_tr">
-				<td>08.02.2018</td>
-				<td>Thusday</td>
-				<td>2:00 - 5:00</td>
-				<td>Physics 1<sup>st</sup> Paper / Social Work 1<sup>st</sup> Paper /<br>Accounting 1<sup>st</sup> Paper</td>
-			</tr>
-			<tr>
-				<td>09.02.2018</td>
-				<td>Friday</td>
-				<td>9:00 - 12:00</td>
-				<td>Logic 1<sup>st</sup> Paper</td>
-			</tr>
-			<tr id="color_tr">
-				<td>10.02.2018</td>
-				<td>Saturday</td>
-				<td>2:00 - 5:00</td>
-				<td>Chemistry 1<sup>st</sup> Paper / Finance & Banking 1<sup>st</sup> Paper / Economics 1<sup>st</sup> Paper</td>
-			</tr>
-			<tr>
-				<td>11.02.2018</td>
-				<td>Sunday</td>
-				<td>2:00 - 5:00</td>
-				<td>Bangla 1<sup>st</sup> Paper</td>
-			</tr>
-			<tr id="color_tr">
-				<td>12.02.2018</td>
-				<td>Monday</td>
-				<td>2:00 - 5:00</td>
-				<td>Biology 1<sup>st</sup> Paper / Psychology 1<sup>st</sup> Paper / Statistics 1<sup>st</sup> Paper /<br>Agricultural Studies 1<sup>st</sup> Paper / Islamic Studies 1<sup>st</sup> Paper</td>
-			</tr>
-			<tr>
-				<td>13.02.2018</td>
-				<td>Tuesday</td>
-				<td>2:00 - 5:00</td>
-				<td>Higher Mathematics 1<sup>st</sup> Paper / Business Organization & Management 1<sup>st</sup> Paper /<br>Municipality & Good Governance 1<sup>st</sup> Paper</td>
-			</tr>
-		</tbody>
-	</table>
-	<div class="footer">
-		<table class="footertab">
-			<tr>
-				<td>
-					<p class="host">This WebSite is hosted by <a target="_blank" href="https://heroku.com">Heroku</a></p>
-				</td>
-				<td>
-					<p class="dev">Developed by Fahim Al Islam.</p>
-					<p>&copy copyright.</p>
-				</td>
-				<td>Developed by <a target="_blank" href="https://python.org" class="py">Python</a> <a target="_blank" href="https://djangoproject.com" class='django'>Django Framework</a></td>
-			</tr>
-		</table>
-	</div>
-</body>
+	<header>
+		<div class="container">
+			<div class="" id="branding">
+				<h1><span class="highlight">Acme</span> Business Solutions</h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
+	<section id="showcase">
+		<div class="container">
+			<h1>Afordable Professional Business solution</h1>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit doloremque at totam nisi, odio iusto. Voluptatum quae minus et nesciunt!</p>
+		</div>
+	</section>
+
+	<section id="newsletter">
+		<div class="container">
+			<h1>Subscribe to Our Newslatter</h1>
+			<form action="" method="post">
+				<input type="email" name="email" placeholder="Enter Email...">
+				<button type="submit" class="button_1">Subscribe</button>
+			</form>
+		</div>
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+			<div class="box">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="">
+				<h3>HTML5 Markup</h3>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias at ad vitae facere dolorem a nobis magnam numquam?</p>
+			</div>
+			<div class="box">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="">
+				<h3>CSS3 Styling</h3>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias at ad vitae facere dolorem a nobis magnam numquam?</p>
+			</div>
+			<div class="box">
+					<img src="https://www.djangoproject.com/s/img/logos/django-logo-negative.png" alt="">
+				<h3>Django Framework</h3>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias at ad vitae facere dolorem a nobis magnam numquam?</p>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>Acme Business Solution &copy; 2018</p>
+	</footer>
+</body>
 </html>

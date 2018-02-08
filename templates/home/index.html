@@ -3,66 +3,289 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=auto, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Acme</title>
-	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<title>Responsives</title>
+	<link rel="stylesheet" href="{% static "css/styler.css" %}">
+	<link rel="stylesheet" href="{% static "fontawesome/on-server/css/fontawesome-all.min.css" %}">
+	<link rel="stylesheet" href="{% static "css/custom.css" %}">
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div class="" id="branding">
-				<h1><span class="highlight">Acme</span> Business Solutions</h1>
-			</div>
-			<nav>
-				<ul>
-					<li class="current"><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
+		<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+			 aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse right" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Services</a>
+					</li>
 				</ul>
-			</nav>
-		</div>
-	</header>
-
-	<section id="showcase">
-		<div class="container">
-			<h1>Afordable Professional Business solution</h1>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit doloremque at totam nisi, odio iusto. Voluptatum quae minus et nesciunt!</p>
-		</div>
-	</section>
-
-	<section id="newsletter">
-		<div class="container">
-			<h1>Subscribe to Our Newslatter</h1>
-			<form action="" method="post">
-				<input type="email" name="email" placeholder="Enter Email...">
-				<button type="submit" class="button_1">Subscribe</button>
-			</form>
-		</div>
-	</section>
-
-	<section id="boxes">
-		<div class="container">
-			<div class="box">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="">
-				<h3>HTML5 Markup</h3>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias at ad vitae facere dolorem a nobis magnam numquam?</p>
 			</div>
-			<div class="box">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="">
-				<h3>CSS3 Styling</h3>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias at ad vitae facere dolorem a nobis magnam numquam?</p>
-			</div>
-			<div class="box">
-					<img src="https://www.djangoproject.com/s/img/logos/django-logo-negative.png" alt="">
-				<h3>Django Framework</h3>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias at ad vitae facere dolorem a nobis magnam numquam?</p>
+		</nav>
+
+
+		<div id="header" class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<h1>Pesponsive Web Design</h1>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis modi impedit quis nemo beatae. Sint eius pariatur ipsam. Vitae, quos?</p>
+						<button class="btn btn-lg btn-primary">But Now</button>
+						<button class="btn btn-lg btn-success">View Details</button>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<img src="{% static "img/responsive-design.png" %}" alt="Uh Oh!">
+					</div>
+				</div>
 			</div>
 		</div>
-	</section>
 
-	<footer>
-		<p>Acme Business Solution &copy; 2018</p>
-	</footer>
+		<div id="services" class="services">
+			<div class="container">
+				<h2>Services</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora magnam autem inventore qui enim perspiciatis odit, sint neque.</p>
+				<div class="row">
+					<div class="col-lg-3 col-md-3">
+						<i class="fa fa-desktop"></i>
+						<h4>Web Development</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo ipsum dolorum non laboriosam neque ullam rem doloremque.</p>
+					</div>
+					<div class="col-lg-3 col-md-3">
+							<i class="fas fa-database"></i>
+							<h4>Database</h4>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo ipsum dolorum non laboriosam neque ullam rem doloremque.</p>	
+					</div>
+					<div class="col-lg-3 col-md-3">
+							<i class="fas fa-lock"></i>
+							<h4>Security</h4>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo ipsum dolorum non laboriosam neque ullam rem doloremque.</p>	
+					</div>
+					<div class="col-lg-3 col-md-3">
+							<i class="fab fa-uikit"></i>
+							<h4>UI/UX</h4>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo ipsum dolorum non laboriosam neque ullam rem doloremque.</p>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="div pricing" id="pricing">
+			<div class="container">
+				<h2>Pricing</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab architecto harum deleniti voluptatem magnam quidem libero reiciendis aliquid.</p>
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="packeges">
+							<h4>Bronze</h4>
+							<h1>9.99</h1>
+							<b>Monthly</b>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem corporis quisquam consequuntur quaerat suscipit qui placeat ea, ipsum officia libero explicabo et necessitatibus in perspiciatis velit officiis dolore voluptatibus doloremque.</p>
+							<hr>
+							<li>100 Users</li>
+							<li>SSL Certificate</li>
+							<li>300GB SSD</li>
+							<li>MySQL Database</li>
+							<li>Unlimited Email Address</li>
+							<button class="btn btn-success">Get Started</button>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="packeges">
+							<h4>Silver</h4>
+							<h1>19.99</h1>
+							<b>Monthly</b>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem corporis quisquam consequuntur quaerat suscipit qui placeat ea, ipsum officia libero explicabo et necessitatibus in perspiciatis velit officiis dolore voluptatibus doloremque.</p>
+							<hr>
+							<li>100 Users</li>
+							<li>SSL Certificate</li>
+							<li>300GB SSD</li>
+							<li>MySQL Database</li>
+							<li>Unlimited Email Address</li>
+							<button class="btn btn-success">Get Started</button>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="packeges">
+							<h4>Gold</h4>
+							<h1>29.99</h1>
+							<b>Monthly</b>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem corporis quisquam consequuntur quaerat suscipit qui placeat ea, ipsum officia libero explicabo et necessitatibus in perspiciatis velit officiis dolore voluptatibus doloremque.</p>
+							<hr>
+							<li>100 Users</li>
+							<li>SSL Certificate</li>
+							<li>300GB SSD</li>
+							<li>MySQL Database</li>
+							<li>Unlimited Email Address</li>
+							<button class="btn btn-success">Get Started</button>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="packeges">
+							<h4>Platinum</h4>
+							<h1>39.99</h1>
+							<b>Monthly</b>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem corporis quisquam consequuntur quaerat suscipit qui placeat ea, ipsum officia libero explicabo et necessitatibus in perspiciatis velit officiis dolore voluptatibus doloremque.</p>
+							<hr>
+							<li>100 Users</li>
+							<li>SSL Certificate</li>
+							<li>300GB SSD</li>
+							<li>MySQL Database</li>
+							<li>Unlimited Email Address</li>
+							<button class="btn btn-success">Get Started</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="team" id="team">
+			<div class="container">
+				<h2>Meet Our Team</h2>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro illo hic ullam.</p>
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<img src="{% static 'img/blank_user.png' %}" class="img-circle" alt="">
+						<h4>Jhon Bole</h4>
+						<b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum.</b><br>
+						<a href="#"><i class="fab fa-facebook-square"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-google-plus-square"></i></a>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<img src="{% static 'img/blank_user.png' %}" class="img-circle" alt="">
+						<h4>Jhon Bole</h4>
+						<b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum.</b><br>
+						<a href="#"><i class="fab fa-facebook-square"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-google-plus-square"></i></a>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<img src="{% static 'img/blank_user.png' %}" class="img-circle" alt="">
+						<h4>Jhon Bole</h4>
+						<b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum.</b><br>
+						<a href="#"><i class="fab fa-facebook-square"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-google-plus-square"></i></a>
+					</div>
+					<div class="col-lg-3 col-md-6">		
+						<img src="{% static 'img/blank_user.png' %}" class="img-circle" alt="">
+						<h4>Jhon Bole</h4>
+						<b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum.</b><br>
+						<a href="#"><i class="fab fa-facebook-square"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-google-plus-square"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="clients" id="clients">
+			<div class="container">
+				<h2>Trusted By</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus illo necessitatibus corporis ad veritatis quaerat repellendus itaque consequatur.</p>
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<li><img src="{% static 'img/client1.png' %}" alt=""></li>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<li><img src="{% static 'img/client2.svg' %}" alt=""></li>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<li><img src="{% static 'img/client3.svg' %}" alt=""></li>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<li><img src="{% static 'img/client4.svg' %}" alt=""></li>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact" id="contact">
+			<div class="container">
+				<h2>Contact</h2>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni vitae voluptas quisquam eaque. Accusantium, officiis.</p>
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<div class="input-group input-group-lg">
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+								</div>
+								<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+							</div>						
+						</div>
+						<div class="input-group input-group-lg">
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
+								</div>
+								<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+							</div>
+						</div>
+						<div class="input-group input-group-lg">
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1"><i class="fas fa-phone"></i></span>
+								</div>
+								<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg6 col-md-6">
+						<div class="input-group input-group-lg">
+							<div class="input-group">
+								<textarea class="form-control big" placeholder="Your Message"></textarea>
+							</div>
+							<button class="btn btn-lg">Submit Your Message</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="footer" id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<h4>Contact Us</h4>
+						<p><i class="fas fa-home"></i> 1791 Hossain Market, Tongi, Gazipur</p>
+						<p><i class="fas fa-enevelope"></i> info@media.com</p>
+						<p><i class="fas fa-phone-square"></i> +880-133-69859855569</p>
+						<p><i class="fas fa-globe"></i> django.com</p>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<h4>About</h4>
+						<p><i class="far fa-square-o" aria-hidden="true"></i> About Us</p>
+						<p><i class="far fa-square-o" aria-hidden="true"></i> Privacy</p>
+						<p><i class="far fa-square-o" aria-hidden="true"></i> Terms & Condition</p>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<h4>Stay Connected</h4>
+						<i class="fab fa-facebook"></i>
+						<i class="fab fa-twitter-square"></i>
+						<i class="fab fa-linkeden"></i>
+						<i class="fab fa-google-plus-square"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script src="{% static "js/jquery331.js" %}"></script>
+	<script src="{% static "js/bootstrap.js" %}"></script>
+	<script src="{% static "js/popper.js" %}"></script>
 </body>
 </html>
